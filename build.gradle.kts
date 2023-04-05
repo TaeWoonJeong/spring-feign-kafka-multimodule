@@ -30,8 +30,16 @@ subprojects {
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("org.springframework.kafka:spring-kafka-test")
     }
-}
 
-tasks.withType<Test> {
-    useJUnitPlatform()
+    tasks.getByName("bootJar") {
+        enabled=true
+    }
+
+    tasks.getByName("jar") {
+        enabled=true
+    }
+
+    tasks.withType<Test> {
+        useJUnitPlatform()
+    }
 }

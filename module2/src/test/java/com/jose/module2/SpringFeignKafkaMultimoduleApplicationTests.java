@@ -1,10 +1,10 @@
-package com.jose.springfeignkafkamultimodule;
+package com.jose.module2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringFeignKafkaMultimoduleApplicationTests {
+class Module2ApplicationTests {
 
     @Test
     void contextLoads() {

@@ -31,16 +31,16 @@ subprojects {
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("org.springframework.kafka:spring-kafka-test")
     }
-
-    bootJar {
-        enabled = false
-    }
-    
-    jar {
-        enabled = true
-    }
     
     test {
         useJUnitPlatform()
     }
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
 }

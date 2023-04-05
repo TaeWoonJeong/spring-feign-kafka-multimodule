@@ -32,7 +32,7 @@ subprojects {
     }
 
     tasks.getByName("bootJar") {
-        enabled=true
+        enabled=false
     }
 
     tasks.getByName("jar") {

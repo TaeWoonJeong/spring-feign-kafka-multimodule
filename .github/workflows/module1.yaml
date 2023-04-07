@@ -1,4 +1,4 @@
-name: Build and Push Image and Modify Image Tag
+name: module1 build
 
 on:
   workflow_dispatch:

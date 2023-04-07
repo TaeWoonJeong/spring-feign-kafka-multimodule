@@ -1,4 +1,4 @@
-name: Build and Push Image and Modify Image Tag
+name: consumer build
 
 on:
   workflow_dispatch:

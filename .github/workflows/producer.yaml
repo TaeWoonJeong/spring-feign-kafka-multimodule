@@ -1,4 +1,4 @@
-name: Build and Push Image and Modify Image Tag
+name: producer build
 
 on:
   workflow_dispatch:

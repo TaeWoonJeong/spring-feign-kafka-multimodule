@@ -4,6 +4,6 @@ ARG JAR_FILE=/build/libs/consumer-0.0.1-SNAPSHOT.jar
 
 COPY ${JAR_FILE} consumer.jar
 
-EXPOSE 9090
+EXPOSE 9080
 
 ENTRYPOINT ["java","-jar","-Duser.timezone='Asia/Seoul'","-Dspring.profiles.active=consumer" , "/consumer.jar"]

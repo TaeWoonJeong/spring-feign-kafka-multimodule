@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT}
+spring:
+  kafka:
+#    bootstrap-servers: my-kafka:9092
+    producer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS}
+      acks: 1
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+app:
+  topic: ${KAFKA_TOPIC}

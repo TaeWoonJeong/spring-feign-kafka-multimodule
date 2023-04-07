@@ -1,0 +1,25 @@
+server:
+  port: ${SERVER_PORT}
+spring:
+  kafka:
+#    bootstrap-servers: my-kafka:9092
+    consumer:
+      bootstrap-servers: ${BOOTSTRAP_SERVERS}
+#    listener:
+#      type: single
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${CONSUMER_DATASOURCE_URL}
+    username: ${CONSUMER_DATASOURCE_USERNAME}
+    password: ${CONSUMER_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+app:
+  topic: {KAFKA_TOPIC}

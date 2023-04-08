@@ -6,5 +6,4 @@ COPY ${JAR_FILE} module2.jar
 
 EXPOSE 8090
 
-
 ENTRYPOINT ["java","-jar","-Dspring.profiles.active=module2" , "/module2.jar"]

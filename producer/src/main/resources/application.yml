@@ -13,3 +13,7 @@ spring:
       matching-strategy: ant_path_matcher
 app:
   topic: ${KAFKA_TOPIC}
+springfox:
+  documentation:
+    swagger-ui:
+      base-url: producer

@@ -4,6 +4,6 @@ ARG JAR_FILE=/build/libs/module2-0.0.1-SNAPSHOT.jar
 
 COPY ${JAR_FILE} module2.jar
 
-EXPOSE 8090
+EXPOSE 8040
 
 ENTRYPOINT ["java","-jar","-Dspring.profiles.active=module2" , "/module2.jar"]

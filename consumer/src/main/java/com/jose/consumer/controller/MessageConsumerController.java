@@ -4,12 +4,14 @@ import com.jose.consumer.dto.GetMessageResponseDto;
 import com.jose.consumer.service.MessageConsumerService;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
+@RequestMapping("/consumer")
 @RestController
 public class MessageConsumerController {
     private final Environment environment;

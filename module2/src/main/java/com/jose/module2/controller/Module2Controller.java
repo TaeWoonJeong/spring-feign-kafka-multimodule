@@ -2,12 +2,14 @@ package com.jose.module2.controller;
 
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @RestController
+@RequestMapping("/module2")
 public class Module2Controller {
     private final Environment environment;
     private String uuid = String.valueOf(UUID.randomUUID());

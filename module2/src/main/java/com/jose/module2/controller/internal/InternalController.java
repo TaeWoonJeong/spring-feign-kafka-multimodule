@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/internal")
+@RequestMapping("/module2/internal")
 @RestController
 public class InternalController {
     private final Module2Service module2Service;

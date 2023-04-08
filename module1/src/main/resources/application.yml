@@ -2,6 +2,10 @@ server:
   port: ${SERVER_PORT}
   module2:
     url: ${MODULE2_SERVER_URL}
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 springdoc:
   swagger-ui:
     path: /module1

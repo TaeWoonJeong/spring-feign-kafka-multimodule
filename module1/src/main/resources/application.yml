@@ -9,7 +9,5 @@ spring:
 springdoc:
   swagger-ui:
     path: /module1/swagger-ui.html
-    operations-sorter: method
-    disable-swagger-default-url: true
   api-docs:
     path: /module1

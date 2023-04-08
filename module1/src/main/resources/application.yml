@@ -2,11 +2,9 @@ server:
   port: ${SERVER_PORT}
   module2:
     url: ${MODULE2_SERVER_URL}
-spring:
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
-springfox:
-  documentation:
-    swagger-ui:
-      base-url: module1
+springdoc:
+  swagger-ui:
+    path: /module1
+    operations-sorter: method
+  api-docs:
+    path: /module1

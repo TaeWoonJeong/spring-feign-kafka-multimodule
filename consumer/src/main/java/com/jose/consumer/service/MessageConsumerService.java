@@ -20,8 +20,8 @@ public class MessageConsumerService {
         messageRepository.save(new Message(null, username, message, sendTime));
     }
 
-    public List<GetMessageResponseDto> getMessages() {
-        return messageRepository.findAll().stream().map(message-> new GetMessageResponseDto(message.getId(), message.getUsername(), message.getMessage(), message.getSendTime()))
+    public List<GetMessageResponseDto> getRecentMessages() {
+        return messageRepository.findTop10ByOrderByIdDesc().stream().map(message-> new GetMessageResponseDto(message.getId(), message.getUsername(), message.getMessage(), message.getSendTime()))
                 .collect(Collectors.toList());
     }
 }

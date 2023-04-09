@@ -32,7 +32,7 @@ public class ListenerContainerConfiguration {
         ConcurrentKafkaListenerContainerFactory<String, String> factory
                 = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(cf);
-        factory.setConcurrency(3);
+        factory.setConcurrency(10);
         factory.setBatchListener(false);
         factory.getContainerProperties().setAckMode(ContainerProperties.AckMode.RECORD);
         return factory;

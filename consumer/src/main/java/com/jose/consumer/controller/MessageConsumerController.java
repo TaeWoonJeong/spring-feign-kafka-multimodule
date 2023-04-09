@@ -30,8 +30,8 @@ public class MessageConsumerController {
         return "message-consumer 의 현재 시간은 "+ LocalDateTime.now() + "이고, 포트는 "+port+"입니다. uuid 값 : "+uuid;
     }
 
-    @GetMapping("/getMessages")
-    public List<GetMessageResponseDto> getMessages() {
-        return messageConsumerService.getMessages();
+    @GetMapping("/getRecentMessages")
+    public List<GetMessageResponseDto> getRecentMessages() {
+        return messageConsumerService.getRecentMessages();
     }
 }

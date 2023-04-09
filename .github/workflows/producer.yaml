@@ -93,5 +93,5 @@ jobs:
           cd ${{ secrets.MANIFEST_REPO }}
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
-          git commit -am "Update image tag"
+          git commit -am "Update producer image tag"
           git push -u origin main

@@ -6,4 +6,5 @@ COPY ${JAR_FILE} producer.jar
 
 EXPOSE 8010
 
+
 ENTRYPOINT ["java","-jar","-Duser.timezone='Asia/Seoul'","-Dspring.profiles.active=producer" , "/producer.jar"]

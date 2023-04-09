@@ -6,4 +6,5 @@ COPY ${JAR_FILE} consumer.jar
 
 EXPOSE 8020
 
+
 ENTRYPOINT ["java","-jar","-Duser.timezone='Asia/Seoul'","-Dspring.profiles.active=consumer" , "/consumer.jar"]

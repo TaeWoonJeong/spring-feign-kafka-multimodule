@@ -23,3 +23,5 @@ springdoc:
     path: /consumer/swagger-ui.html
   api-docs:
     path: /consumer
+app:
+  topic: ${KAFKA_TOPIC}

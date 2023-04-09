@@ -2,11 +2,10 @@ server:
   port: 9999
 spring:
   kafka:
-    #    bootstrap-servers: my-kafka:9092
     consumer:
       bootstrap-servers: localhost:9092
-  #    listener:
-  #      type: single
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+app:
+  topic: fake-topic

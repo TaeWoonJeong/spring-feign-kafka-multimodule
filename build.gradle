@@ -38,6 +38,22 @@ subprojects {
     }
 }
 
+project(":producer") {
+    bootJar.archiveName("producer.jar")
+}
+
+project(":consumer") {
+    bootJar.archiveName("consumer.jar")
+}
+
+project(":module1") {
+    bootJar.archiveName("module1.jar")
+}
+
+project(":module2") {
+    bootJar.archiveName("module2.jar")
+}
+
 bootJar {
     enabled = false
 }
